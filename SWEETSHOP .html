@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Home Page
+	</title>
+	<style>
+		header{
+			width: 100%;
+			height: 50px;
+			float: left;
+			box-sizing: border-box;
+			padding: 5px;
+			}
+
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		#brand_name{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+			float: left;
+			margin-left: 17px;
+		}
+		#tag_line{
+			float: right;
+			padding: 0;
+			margin: 0;
+			margin-top: 6px;
+			font-family: century gothic;
+			margin-right: 17px;
+			font-weight: bold;
+			font-size: 22px;
+		}	
+		nav{
+			width: 100%;
+			height:106px;
+			background-color: skyblue;
+			float: left;
+			box-sizing: border-box;
+			padding: 30px;
+		}
+		#Search{
+			width: 300px;
+			height:40px;
+			float: left;
+			box-sizing: border-box;
+			border :none;
+			font-size: 20px;
+			padding: 10px;
+		}
+		#Submit{
+			width: 110px;
+			height: 40px;
+			float: left;
+			box-sizing: border-box;
+			border :none;
+			margin-left: 5px;
+			font-size: 20px;
+		}
+		#table{
+			width: 600px;
+			height: 40px;
+			float :right;
+			box-sizing: border-box;
+		}
+		#menu_item{
+			background-color: white;
+			width: 20%;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			font-family: sans-serif;
+			color: black;
+		}
+		section{
+			width: 100%;
+			height: 1700px;
+			float: left;
+			box-sizing: border-box;
+			border-width: 1px;
+			border-style: solid;
+			border-color: blue;
+			padding: 15px;
+		}
+		#venue{
+			float: left;
+			font-weight: bold;
+		}
+		#online{
+			float: right;
+			font-weight: bold; 
+		}
+		#sweet_box{
+			width: 720px;
+			height: 650px;
+			float: left;
+			box-sizing: border-box;
+			background-color: black;
+			margin-top: 20px;
+			padding: 25px;
+		}
+
+		#popular_sweets{
+			text-align :center;
+			color: white;
+			font-size: 30px;
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+		#sweet_image{
+			width: 300px;
+			height: 250px;
+			margin :15px;
+			border-width: 6px;
+			border-style: solid;
+			border-color: white;
+			box-sizing: border-box;
+		}
+		#rate_list{
+			width: 400px;
+			height: 670px;
+			float: right;
+			box-sizing: border-box;
+			margin-top: 20px;
+
+		}
+		#sweet_name{
+			height: 50px;
+			background-color:black;
+			color: white;
+			text-align: center;
+			font-family: century gothic;
+			font-size: 18px; 
+		}
+		#sweet_price{
+			height: 50px;
+			background-color:black;
+			color: white;
+			text-align: center;
+			font-family: century gothic
+			font-size: 24px;
+		}
+		#sweet_list{
+			background-color: skyblue;
+			color: black;
+			font-family: century gothic;
+			font-size: 23px;
+			padding: 5px;
+			border-bottom-width: 4px;
+			border-bottom-style: solid;
+			border-bottom-color: black;
+
+		}
+		#sli_name{
+			color: black;
+			font-family: century gothic;
+			font-size: 23px;
+			padding: 10px;
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			border-bottom-color: black;
+		}
+		#rate_rate{
+			list-style: none;
+			padding: 8px;
+		}
+		fieldset{
+			width: 690px;
+			height: 550px;
+			float: left;
+			margin-top: 30px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #ccc
+		}
+		legend{
+			font-family: cursive;
+			font-size: 35px;
+		}
+		form{
+			font-size: 16px;
+			font-family: papyrus;
+			font-weight: bold;
+		}
+		#order_input{
+			width: 100%;
+			height:30px;
+			box-sizing: border-box;
+			border-width: 2px;
+			border-style: dashed;
+			border-color: #ccc
+		}
+		textarea{
+			width:100%;
+			height: 85px;
+			box-sizing: border-box;
+			border-color: #ccc
+		}
+		#submit_btn{
+			padding: 10px;
+			font-size: 30px;
+			float: right;
+			border-width: 2px;
+			border-style: solid;
+			border-color: #ccc
+			background-color:white;
+		}
+		#abt_us{
+			width: 460px;
+			height: 525px;
+			float: right;
+			padding: 12px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #ccc;
+			margin-top: 30px;
+		}
+		#arka2{
+			background-color: skyblue;
+			padding: 10px;
+			line-height: 10px;
+			font-family: calibri;
+			text-align: justify;
+		}
+		#m_sweets{
+			float: left;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		#mm_sweets{
+			text-align: center;
+			font-family: Papyrus;
+			font-size: 28px;
+		}
+		#sweets_online{
+			width: 218px;
+			height: 240px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: black;
+			float: left;
+			padding-left: 4px;
+			margin-right: 20px;
+		}
+		
+		#sweet_pic{
+			width: 180px;
+			height: 150px;
+			margin: 15px;
+		}
+		#button_buy{
+			padding: 10px;
+			border-width: 2px;
+			border-style: solid;
+			border-color: #ccc;
+			width: 110px;
+			background-color: white;
+			font-family: sans-serif;
+			font-weight: bolder;
+			font-size: 16px;
+		}
+		footer{
+			width: 100%;
+			height: 250px;
+			box-sizing: border-box;
+			float: left;
+			background-color: black;
+		}
+		#contact_us{
+			width: 400px;
+			height: 250px;
+			box-sizing: border-box;
+			float: left;
+			border-width: 1px;
+			border-style: solid;
+			
+		}
+		#social_link{
+			width: 400px;
+			height: 250px;
+			box-sizing: border-box;
+			float: right;
+			border-width: 1px;
+			border-style: solid;
+
+		}
+		#contact_us1{
+			color: white;
+			font-family: Papyrus;
+			font-size: 30px;
+			margin-left:10px;
+		}
+		#ad_foot{
+			color: white;
+			font-family: Calibri;
+			font-size: 16px;
+			padding: 7px;
+			margin-left:10px;
+		}
+		#img_footer{
+			width: 60px;
+			margin: 20px;
+			margin-left: 40px;
+		}
+		#dev{
+			float: left;
+			color: white;
+			font-family: sans-serif; 
+			margin-left: 30px;
+			margin-top: 200px;
+		}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<h1 id="brand_name">Memari Famous Sweets.Com</h1>
+		<p id="tag_line">One of The Largest Sweet & Bakeries Shop</p>
+		</header>
+		<nav>
+			<form>
+				<input type="Search" name="Search" placeholder="Search Your Sweet Here" id="Search">
+				<input type="submit" name="submit" id="Submit" value="SEARCH &#128269">
+			</form>
+			<table id="table">
+				<tr>
+					<td id="menu_item"><a href="file:///C:/Users/home/Desktop/SWEETSHOP%20.html">Home</a></td>
+					<td id="menu_item"><a href="https://en.wikipedia.org/wiki/Sweets_from_the_Indian_subcontinent">Sweets</td></a>
+					<td id="menu_item"><a href="https://startuptalky.com/top-bakery-franchise-in-india/">Bakeries</td></a>
+					<td id="menu_item"><a href="https://maps.app.goo.gl/knRaMytS5rG9pvLh6">Location</td></a>
+					<td id="menu_item"><a href="#contact_us">Contact Us</td></a>
+				</tr>
+			</table>
+		</nav>
+	<section>
+		<address id="venue">
+			Venue : Memari Bamunpara, Jhapantala 
+		</address>
+		<address id="online">
+			Order Online-> +91 1000 258963   //  +91 25000 45238
+		</address>
+		<hr>
+		<div id="sweet_box">
+			<h1 id="popular_sweets">Our Popular Sweets</h1>
+			<img src="https://t4.ftcdn.net/jpg/03/64/73/37/360_F_364733792_kGTfRUnoPLIX0PPgO0zFmV2Ao2exg8bH.jpg"alt="Rasgulla" id="sweet_image"/>
+
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1BtzLx79VrHeXc_prWDzjXjNgGcVnOgIGNCsLtyoXKtVqRoamPsDdOP2uh0C9NXWIfk&usqp=CAU"alt="Gulabjamun" id="sweet_image"/>
+
+			<img src="https://images.herzindagi.info/image/2019/May/how-to-make-sweet-dish-kheer-kadam-at-home-main.jpg"alt="Kheer Kadamba" id="sweet_image"/>
+
+			<img src="https://www.alicaspepperpot.com/wp-content/uploads/2017/05/DSC_0057-2-scaled-720x720.jpg"alt="Sweet Samosha" id="sweet_image"/>
+		</div>
+		<table id="rate_list">
+			<tr>
+				<td id="sweet_name">Sweet Name</td>
+				<td id="sweet_price">Prices</td>
+			</tr>
+
+			<tr>
+				<td id="sweet_list">
+					<ol>
+					<li id="sli_name">Rasgulla</li>
+					<li id="sli_name">Barfi</li>
+					<li id="sli_name">Gulabjamun</li>
+					<li id="sli_name">Kaju Katli</li>
+					<li id="sli_name">Jalebi</li>
+					<li id="sli_name">Kacha Golla</li>
+					<li id="sli_name">Danadar</li>
+					<li id="sli_name">Kheer Kadamba</li>
+					<li id="sli_name">Laddo</li>
+					<li id="sli_name">Sandesh</li>
+					
+				</ol>
+
+				</td>
+				<td id="sweet_list">
+					<ol id="rate_rate">
+						<li id="sli_name">120rs/kg</li>
+						<li id="sli_name">290rs/kg</li>
+						<li id="sli_name">200rs/kg</li>
+						<li id="sli_name">250rs/kg</li>
+						<li id="sli_name">150rs/kg</li>
+						<li id="sli_name">200rs/kg</li>
+						<li id="sli_name">100rs/kg</li>
+						<li id="sli_name">290rs/kg</li>
+						<li id="sli_name">125rs/kg</li>
+						<li id="sli_name">240rs/kg</li>
+						
+					</ol>
+				</td>
+			</tr>
+		</table>
+		<fieldset id="frm_box">
+			<legend>
+				Order Online
+			</legend>
+			<form>
+				Buyer Name<br>
+				<input type="text" name="name" placeholder="Type Your Name" id="order_input"><br><br>
+				Mobile No.<br>
+				<input type="number" name="Mobile"placeholder="Mobile No" id="order_input"><br><br>
+				Choose Sweets<br>
+				<select name="choose_sweets">
+					<option value="Rasgulla"></option>
+					<option value="Rasgulla">Rasgulla</option>
+					<option value="Barfi">Barfi</option>
+					<option value="Gulabjamun">Gulabjamun</option>
+					<option value="kaju Katli">kaju Katli</option>
+					<option value="Jalebi">Jalebi</option>
+                    <option value="Kacha Golla">Kacha Golla</option>
+					<option value="Danadar">Danadar</option>
+					<option value="Laddo">Laddo</option>
+					<option value="Sandesh">Sandesh</option>
+				</select>
+				<br><br>
+				Quantity<br>
+				<input type="text" name="Quantity" id="order_input">
+				<br><br>
+				Address<br>
+				<textarea name="address"></textarea>
+				<br><br>
+				<input type="submit" value="Order Now" id="submit_btn">
+			</form>
+		</fieldset>
+		<div id="abt_us">
+			<h1 align="center" id="arka2">About Us</h1>
+			<hr>
+			<p id="arka">
+				Our beloved sweet shop has been a cherished part of the community for over 50 years, standing as a beacon of tradition and delight for generations of customers. Nestled in the heart of town, our shop exudes an old-world charm that transports visitors back to a simpler time, where the art of crafting delectable sweets was a revered skill passed down through the ages.
+
+As you step through the welcoming doors of our shop, the sweet aroma of freshly made treats envelops you, inviting you to explore the array of delights that line the shelves. From traditional favorites to innovative creations, our shop offers a wide range of sweets to cater to every palate and occasion.
+
+One of the most famous sweets in our shop is the legendary "Grandma's Secret Recipe Fudge." This decadent fudge has been a staple in our shop since its inception, drawing customers from far and wide with its rich, creamy texture and melt-in-your-mouth goodness. Made with only the finest ingredients and crafted with love and care, each bite of Grandma's Secret Recipe Fudge is a nostalgic journey back to childhood memories and moments of pure joy.
+
+			</p>
+		</div>
+		<div id="m_sweets">
+			<h1 id="mm_sweets"><u>More Sweets</u></h1>
+		</div>
+		<div id="sweets_online">
+			<img src="https://rakskitchen.net/wp-content/uploads/2011/10/6504365499_8495fd44e8_o.jpg" id="sweet_pic">
+			<center>
+			<a href="#frm_box"><button id="button_buy" ali>Buy Now !</button></a></center>
+		</div>
+		<div id="sweets_online">
+			<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2013/10/sandesh-recipe-2.jpg" id="sweet_pic">
+			<center>
+			<a href="#frm_box"><button id="button_buy" ali>Buy Now !</button></a></center>
+		</div>
+		<div id="sweets_online">
+			<img src="https://www.shutterstock.com/image-photo/bundi-laddu-dessert-made-during-260nw-2153796239.jpg" id="sweet_pic">
+			<center>
+			<a href="#frm_box"><button id="button_buy" ali>Buy Now !</button></a></center>
+		</div>
+		<div id="sweets_online">
+			<img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/moumita.malla-gmail.com/traditional_rasmalai_recipe_400.jpg" id="sweet_pic">
+			<center>
+			<a href="#frm_box"><button id="button_buy" ali>Buy Now !</button></a></center>
+		</div>
+		<div id="sweets_online">
+			<img src="https://indiasweethouse.in/cdn/shop/files/KajuKatli.jpg?v=1685445876" id="sweet_pic">
+			<center>
+			<a href="#frm_box"><button id="button_buy" ali>Buy Now !</button></a></center>
+		</div>
+	</section>
+
+	<footer>
+		<div id="contact_us">
+			<h1 id="contact_us1">Contact Us</h1>
+			<address id="ad_foot">
+				Website : Memari Famous Sweets
+			</address>
+			<address id="ad_foot">
+				Phone No : +91 0258963147
+			</address>
+			<address id="ad_foot">
+				Address : Memari , Purba Bardhaman
+			</address>
+			<address id="ad_foot">
+				G Mail Id : sweets91@gmail.com
+			</address></div>
+
+			<div id="dev">
+				This Website is devoloped by
+				         @rk@ and H@K3rS
+			
+		     </div>
+
+		<div id="social_link">
+			<h1 id="contact_us1">Follow Us</h1>
+			<a href="https://www.facebook.com"><img src="https://i.pinimg.com/564x/a7/26/b7/a726b78996d835c9b913932ad2a67059.jpg" id="img_footer"></a>
+			<a href="https://www.linkedin.com"><img src="data:image/jpeg;base64,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" id="img_footer"></a>
+			<a href="https://www.tweeter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWq02ID_jiRcRhWfUocaRpfIKiDu3-7U3Uvw&s" id="img_footer"></a>
+		</div>
+	</footer>
+</body>
+</html>
